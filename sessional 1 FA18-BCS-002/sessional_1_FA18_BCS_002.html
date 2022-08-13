@@ -1,0 +1,291 @@
+<!-- 
+     FA18-BCS-002 
+     ABDUL HAMEED KHAN
+     BCS-6A 
+     Sessional 1 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: black;
+}
+
+
+</style>
+</head>
+<body>
+  <a href="logo.jpg">
+<img src="logo.jpg" style=" width: 75px; height: 75px; margin-left: auto; margin-right: auto; display: block;"></a>
+<h2 style="text-align: center;">COMSATS University Registration Form</h2>
+<p style="text-align: center;font-size: 20px;">Please fill out below form to proceed</p>
+<div class="row">
+  <div class="col-75">
+    
+      <form action="CV.html" method="POST">
+      
+        <div class="row">
+          <div class="col-50">
+            
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Abdul Hameed">
+            <label for="fname"> Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Khan">
+           
+            <label for="email"> Email</label>
+            <input type="text" id="email" name="email" placeholder="hameed008@example.com">
+            <label for="adr"> Address</label>
+            <input type="text" id="adr" name="Address" placeholder="house no.5, street 11, hMirpur Abbottabad">
+            <label for="city"> Country</label>
+            <input type="text" id="city" name="city" placeholder="Pakistan">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">City</label>
+                <input type="text" id="state" name="state" placeholder="Abbottabad">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="22010">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+         
+            <label for="ccnum">Mobile number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="0311-9562315">
+            <table>
+              
+              <tr>
+                  <td>    
+                      <label for="dob">DATE OF BIRTH</label>
+                  </td>
+                  <td>
+                      <select id="d" name="day">
+                          <option value="" selected disabled hidden>Day:</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                      </select>
+                      <select id="month" name="month">
+                          <option value="" selected disabled hidden>Month:</option>
+                          <option value="jan">January</option>
+                          <option value="feb">Feburary</option>
+                          <option value="mar">March</option>
+                          <option value="apr">April</option>
+                          <option value="may">May</option>
+                          <option value="jan">June</option>
+                          <option value="feb">July</option>
+                          <option value="mar">August</option>
+                          <option value="apr">September</option>
+                          <option value="may">October</option>
+                          <option value="apr">November</option>
+                          <option value="may">December</option>
+                      </select>   
+                      <select id="year" name="year">
+                          <option value="" selected disabled hidden>Year:</option>
+                          <option value="1999">1994</option>
+                          <option value="2000">1995</option>
+                          <option value="2001">1996</option>
+                          <option value="2002">1997</option>
+                          <option value="2003">1998</option>
+                          <option value="1999">1999</option>
+                          <option value="2000">2000</option>
+                          <option value="2001">2001</option>
+                          <option value="2002">2002</option>
+                          <option value="2003">2003</option>
+
+                      </select>
+                  </td>
+              </tr>
+  
+            
+  
+              <tr>
+                  <td>
+                      <label for="gender">GENDER</label>
+                  </td>
+                  <td>
+                      <label for="male">Male</label>
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="female">Female</label>
+                      <input type="radio" id="female" name="gender" value="female">
+                  </td>
+              </tr>
+              
+            <tr>
+              <td>Education</td>
+              
+          </tr>
+          <tr>
+              <td colspan="1"></td>
+              <td>1.
+                  Matric</td>
+              <td> <input type="text"></td>
+              <td> <input type="text"></td>
+              <td> <input type="text"></td>
+
+          </tr>
+          <tr>
+              <td colspan="1"></td>
+              <td>2.Intermediate</td>
+              <td> <input type="text"></td>
+              <td> <input type="text"></td>
+              <td> <input type="text"></td>
+
+          </tr>
+          
+
+       
+
+          <tr>
+              <td>COURSES APPLIED FOR</td>
+              <td>
+                  <input type="radio" name="courses applied for" value="courses"/>BS
+                  <input type="radio" name="courses applied for" value="courses"/>MS
+                  
+                  
+              </td>
+          </tr>
+  </table>
+            
+           
+            
+            
+          </div>
+          
+        </div>
+        
+        <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Save this information for next time
+          </label>
+        <input type="submit" value="Submit" class="btn">
+      </form>
+    
+  </div>
+ 
+</div>
+
+</body>
+</html>
