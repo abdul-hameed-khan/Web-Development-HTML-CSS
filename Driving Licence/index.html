@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Licence Form</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script>
+        function Pakistani()
+        {
+            if (document.getElementById('pak').checked)
+            {
+                document.getElementById('pakinfo').style.display='none';
+            }
+            else {
+                document.getElementById('pakinfo').style.display='block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="images/punjabgov.jpg" alt="DLIMS Logo">
+
+   
+
+    <form action="./success.html">
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname" placeholder="Enter First Name" required >
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="lname">Last Name</label>
+                </td>
+                <td>
+                    <input type="alphabetic" id="lname" name="lname" placeholder="Enter Last Name" required >
+                 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fname">Father Name</label>
+                </td>
+                <td>
+                    <input type="text" id="faname" name="faname" placeholder="Enter Father Name" required maxlength="30" >
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>    
+                    <label for="dob">Date of Birth</label>
+                </td>
+                <td>
+                    <select id="days" name="days">
+                        <option value="" selected disabled hidden>Day:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select id="month" name="month">
+                        <option value="" selected disabled hidden>Month:</option>
+                        <option value="jan">January</option>
+                        <option value="feb">Feburary</option>
+                        <option value="mar">March</option>
+                        <option value="mar">April</option>
+                        <option value="mar">May</option>
+                        <option value="mar">June</option>
+                        <option value="mar">July</option>
+                        <option value="mar">August</option>
+                        <option value="mar">September</option>
+                        <option value="mar">Octuber</option>
+                        <option value="mar">November</option>
+                        <option value="mar">December</option>
+
+                    </select>   
+                    <select id="year" name="year">
+                        <option value="" selected disabled hidden>Year:</option>
+                        <option value="2000">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2000">2001</option>
+                        <option value="2000">2002</option>
+                        <option value="2000">2003</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <input type="checkbox" id="pak" name="pak" value="yes" onclick="Pakistani() ">
+                <label for="pak">If you are Not a <b>Pakistani</b> Check this</label>
+                <fieldset id="pakinfo">
+                    <label for="fname">CNIC</label>
+                    <input type="text" id="cname" name="cname" placeholder="Without Dash" required maxlength="13" >                
+            </fieldset>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email ID</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phone">Mobile Number</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number" required maxlength="11">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phone">Emergence Contact</label>
+                </td>
+                <td>
+                    <input type="tel" id="cphone" name="cphone" placeholder="Eemergence Contact " required maxlength="11">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">Blood Group</label>
+                </td>
+                <td>
+                    <input type="text" id="group" name="group" placeholder="e.g 'B+'" required maxlength="4">
+                   
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <input type="text" id="city" name="city" placeholder="Enter City Name" required maxlength="15">
+                   
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">Street</label>
+                </td>
+                <td>
+                    <input type="text" id="street" name="street" placeholder="e.g 'A'" required maxlength="10">
+                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">House No.</label>
+                </td>
+                <td>
+                    <input type="text" id="house" name="house" placeholder="e.g 123" required maxlength="10">
+                   
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">Passport No.</label>
+                </td>
+                <td>
+                    <input type="text" id="pass" name="pass" placeholder="e.g 'VSD4598XU'" required maxlength="9">
+                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hobbies">Applied For</label>
+                </td>
+                <td>
+                    <label for="drawing">Motor-Cycle</label>
+                    <input type="checkbox" id="drawing" name="drawing" value="Drawing">
+                    <label for="singing">Car</label>
+                    <input type="checkbox" id="singing" name="singing" value="Singing">
+                    <label for="dancing">Tractor</label>
+                    <input type="checkbox" id="dancing" name="dancing" value="Dancing">
+                    <label for="sketching">Truck</label>
+                    <input type="checkbox" id="sketching" name="sketching" value="Sketching"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
