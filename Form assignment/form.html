@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="center">
+            <div class="top">
+        
+                <!-- <div class="topleft"> -->
+                    <h2>Employees Details</h2> 
+                <!-- </div> -->
+        
+                 <!-- <div class="toprigth"> 
+                <a href="table.php" class="button">Back to List</a>
+               </div>  -->
+        
+            </div> 
+            <form action="added.html" name="form" id="form" >
+                <table>
+                    
+                <tr>
+                    <td><label for="name">Enter Name:</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Name" ></td>
+                    
+                </tr>
+    
+                <tr>
+        
+                    <td><label for="password">Enter Password:</label></td>
+                    <td><input type="password" name="password" id="password" placeholder="Password"></td>
+    
+                </tr>
+        
+                <tr>            
+                    <td><label for="address">Enter Address:</label></td>
+                    <td><input type="text" name="address" id="address" placeholder="Address"></td> 
+           
+                </tr>
+        
+        
+                <tr>
+        
+                    <td><label for="salary">Enter Salary:</label></td>
+                    <td><input type="text" name="salary" id="salary"  placeholder="Salary "  ></td>
+    
+                </tr>
+    
+               
+    
+                
+                
+                <tr>
+        
+                    <td><label for="gender">Gender:</label></td>
+    
+                    <td><input  type="radio" name="gender" id="male" value="male"><label  for="male">Male</label> 
+                    
+                    <input class="radio" type="radio" name="gender" id="female" value="female"><label  for="female">Female</label>
+                    <input  type="radio" name="gender" id="other" value="other"><label  for="other">Other</label>
+                    
+                    
+                </tr>
+                 
+                    
+                <tr>
+        
+                    <td><label for="dob">Enter Date of Birth:</label></td>
+                    <td><input type="date" name="dob" id="dob" ></td>
+    
+                </tr>
+                
+                
+                <tr class="cloneclass">
+                    <td><label for="degree">Degree</label></td>
+                    <td><select name="degree[]"  placeholder="Degree">
+                        <option value="" disabled selected hidden>Degree</option>
+                        <option value="">--</option>
+                        <option value="Matric">Matric</option>
+                        <option value="FSC">FSC</option>
+                        <option value="BS">BS</option>
+                        
+                    </select> <input type="number" class="marks" name="percentage[]" placeholder="Percentage/CGPA" min="0" max="100" step="any"></td>
+                
+                </tr>
+    
+                <!-- <tr>
+                    
+                   <td> <input type="button" class="clonebtn" id="clonebtn" name="clonebtn" value="+ Add Another Degree"></td>
+                   <td> <input type="button" class="clonebtn" id="removebtn" name="removebtn" value="Remove "> </td>
+                   
+                </tr> -->
+    
+                
+                
+                
+                 
+                <tr>
+        
+                   <td><label for="photo">Upload your Picture:</label></td>
+                   <td><input type="file" name="photo" id="photo"></td>
+    
+                </tr>
+    
+                <tr>
+        
+                    <td><label for="hours">Number of work hours:</label></td>
+                    <td><input type="number" name="hours" id="hours" placeholder="Hours between 0-30" min=0 max=30 ></td>
+    
+                </tr>
+    
+                <tr>
+        
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" name="phone" id="phone" placeholder="e.g (+92)123456789"></td>
+    
+                </tr>
+    
+    
+               
+    
+                <tr>
+        
+                    <td><label for="cv">Upload your CV:</label></td>
+                    <td><input  type="file" name="cv" id="cv"></td>
+    
+                </tr>
+                
+                <tr>
+        
+                    <td class="label" > <label  for="textarea">Enter your comments:</label></td>
+                    
+                    
+    
+                </tr>
+    
+                <tr>
+                <td colspan=3;>
+                    <textarea name="textarea" id="textarea" cols="40" rows="10" placeholder="Please tell us what you think"></textarea>
+                </td>
+                </tr>
+    
+                <tr>
+        
+                    <td><label for="website">Website:</label></td>
+                    <td><input type="url" name="website" id="website" placeholder="URL for your website"></td>
+                    
+    
+                </tr>
+    
+                <tr>
+        
+                    
+                    <td colspan=2;><input type="checkbox" name="subscription" id="subscription" value="on" ><label  for="subscription">Do you want Magazine Subscription (Optional)</label></td>
+                    <td></td>
+        
+    
+                </tr>
+                
+                </table>
+    
+                <input type="reset" class="buttonend"><br>
+                <input type="submit" class="longbutton" name="submitid" id="submitid"value="Submit ">
+                
+            </form>
+        </div>
+    
+    </div>
+    
+    
+        
+    </body>
+</html>

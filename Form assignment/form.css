@@ -1,0 +1,216 @@
+.container{
+    min-height: 400px;
+    width: 1024px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+h2{
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+table{
+
+    width: auto;
+}
+
+
+
+
+input[type=text],[type=password],[type=date],[type=number],[type=url],[type=tel],[type=float] {
+    padding:15px;
+    width:270px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+    border-radius: 6px;
+    border:1px solid #767676;
+    background-color: #F7F7F7;
+    font-size: 1.125rem;
+}
+
+.label{
+    padding-top: 20px;
+}
+
+input[type=file],[type=radio]
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+select{
+    padding:10px 10px;
+    width:105px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+    border-radius: 6px;
+    border:1px solid #767676;
+    background-color: #F7F7F7;
+    font-size: 1.100rem;
+    
+}
+.subject{
+    padding:15px;
+    width:150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+    border-radius: 6px;
+    border:1px solid #767676;
+    background-color: #F7F7F7;
+    font-size: 1rem;
+}
+.marks{
+    padding:15px;
+    width:150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+    border-radius: 6px;
+    border:1px solid #767676;
+    background-color: #F7F7F7;
+    font-size: 1rem;
+}
+
+
+textarea{
+    background-color: #F7F7F7 ;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 5px;
+    width:90%;
+    font-size: 1.125rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.check{
+    margin-left: -160px;
+    margin-right: none;
+}
+
+label{
+    font-size: 1.27rem;
+    margin-bottom: 10px;
+    font-family:sans-serif;
+}
+ 
+
+.button{
+    background-color: rgb(43, 146, 46);
+    color:white;
+    padding:12px 25px;
+    font-size: 1.12rem;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.28);
+    border: none;
+    
+}
+
+.clonebtn{
+    background-color: rgb(43, 146, 46);
+    color:white;
+    padding:7px 8px;
+    font-size: 1rem;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.28);
+    border: none;
+}
+
+
+.buttonend{
+    margin-top: 20px;
+    background-color: rgb(43, 146, 46);
+    color:white;
+    padding:12px 25px;
+    font-size: 1.12rem;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.28);
+    border: none;
+    
+}
+.buttonend:hover{
+    background-color: rgb(21, 117, 21) ;
+    
+    }
+.longbutton{
+    margin-top: 20px;
+    background-color: rgb(43, 146, 46);
+    color:white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 95%;
+    font-size: 1.12rem;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.28);
+    border: none;
+    text-align: center;
+    
+}
+
+.longbutton:hover{
+background-color: rgb(21, 117, 21) ;
+
+}
+
+a{
+    text-decoration: none;
+}
+/* th,td {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  table{
+    
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  } */
+
+  .delete{
+    height:50px;
+    background-color: lightgreen;
+    border-radius: 4px;
+    text-align: center;
+}
+.delete p{
+  padding:4px;
+}
+.notdelete{
+  height:30px;
+  background-color: red;
+  
+  border-radius: 4px;
+  text-align: center;
+}
+.notdelete p{
+padding:4px;
+}
+.red{
+color: red;
+
+}
+.red2{
+    color: red;
+    margin-top: -10px;
+    }
